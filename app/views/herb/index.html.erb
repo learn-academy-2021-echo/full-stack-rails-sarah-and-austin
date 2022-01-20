@@ -1,0 +1,12 @@
+<h1>Herb Garden</h1>
+
+<ul>
+  <% @herbs.each do |herb| %>
+    <li>
+      <%= link_to herb.name, herb_path(herb) %>
+    </li>
+  <% end %>
+</ul>
+
+<br>
+<p><%= link_to 'Create New Herb', new_herb_path %></p>

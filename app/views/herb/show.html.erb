@@ -1,0 +1,9 @@
+<h2>Individual Herb</h2>
+
+<p>Name: <%= @herb.name %></p>
+<p>Is watered? <%= @herb.watered %></p>
+
+<br>
+<p><%= link_to 'Back to All Herbs', herbs_path %></p>
+
+<p><%= link_to 'Edit Herb', edit_herb_path(@herb) %></p>
